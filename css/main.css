@@ -288,8 +288,8 @@ button {
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/imgsm@2x.png);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(47, 48, 58, 0.4)), url(../../images/hero/imgsm@2x.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.1)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/imgsm@2x.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(47, 48, 58, 0.4)), url(../images/hero/imgsm@2x.png);
   }
 }
 @media screen and (min-width: 768px) {
@@ -508,7 +508,7 @@ button {
 }
 
 .profile {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   width: 100%;
 }
 
@@ -541,7 +541,7 @@ button {
 
 .profile__list {
   list-style-type: none;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,6 +556,11 @@ button {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (max-width: 767px) {
+  .profile__item {
+    margin-bottom: 30px;
+  }
 }
 
 .socials__list {
@@ -582,7 +587,7 @@ button {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: #AFB1B8;
+  color: #afb1b8;
   -webkit-transition-property: color, background-color;
   transition-property: color, background-color;
   -webkit-transition-duration: 250ms;
@@ -591,7 +596,7 @@ button {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover, .social-link:focus {
-  color: #F5F4FA;
+  color: #f5f4fa;
   background-color: var(--accent-color);
 }
 
@@ -636,6 +641,11 @@ button {
   letter-spacing: 0.03em;
   padding-top: 94px;
   margin-bottom: 50px;
+}
+
+.customer__item {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .customer__list {

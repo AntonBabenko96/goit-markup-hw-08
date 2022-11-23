@@ -1,119 +1,113 @@
 .profile {
-    background-color: #F5F4FA;
-    width: 100%;
-
+  background-color: #f5f4fa;
+  width: 100%;
 }
 
 .profile__title {
-    font-size: 28px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    text-align: center;
-    margin-bottom: 30px;
-    padding-top: 60px;
+  font-size: 28px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 60px;
 }
 
 .name {
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    margin-top: 30px;
-    margin-bottom: 10px;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .speciality {
-    color: var(--text-color);
-    font-size: 16px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    margin-bottom: 16px;
-
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
 
 .profile__list {
-    list-style-type: none;
-    background-color: #F5F4FA;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-
+  list-style-type: none;
+  background-color: #f5f4fa;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 .profile__item {
-    width: 450px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
-    border-radius: 0px 0px 4px 4px;
-
-        
+  width: 450px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
-
-
 .socials__list {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 24px;
 }
 
 .social-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    color: #AFB1B8;
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover,
-        &:focus {
-            color: #F5F4FA;
-            background-color: var(--accent-color);
-        }
+  &:hover,
+  &:focus {
+    color: #f5f4fa;
+    background-color: var(--accent-color);
+  }
 }
 
-
-
 .social-icon {
-    fill: currentColor;
+  fill: currentColor;
 }
 
 @media screen and (min-width: 480px) {
-    
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .profile__list {
-        gap: 30px;
-    }
-    .profile__item {
-        width: 354px;
-    }
+  .profile__list {
+    gap: 30px;
+  }
+  .profile__item {
+    width: 354px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .profile__item {
-            width: 270px;
-            &:not(:last-child) {
-                    margin-right: 30px;
-                }
+  .profile__item {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
     }
-   .profile__title {
-      font-size: 36px;
-      line-height: 1.16;
-      letter-spacing: 0.03em;
-      text-align: center;
-      margin-bottom: 50px;
-      padding-top: 94px;
-    }
-    .socials__list {
-        justify-content: center;
-        padding-bottom: 24px;
-    }
+  }
+  .profile__title {
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 94px;
+  }
+  .socials__list {
+    justify-content: center;
+    padding-bottom: 24px;
+  }
 }
