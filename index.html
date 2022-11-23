@@ -18,10 +18,10 @@
     />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
+        <a href="./index.html" class="logo">Web<span class="logo--txt">Studio</span></a>
         <nav class="nav">
-          <a href="./index.html" class="logo">Web<span class="logo--txt">Studio</span></a>
           <ul class="nav__list list">
             <li class="nav__item"><a href="./index.html" class="nav__link nav__link--current link">Студія</a></li>
             <li class="nav__item"><a href="./portfolio.html" class="nav__link link">Портфоліо</a></li>
@@ -31,23 +31,31 @@
         <ul class="info list">
           <li class="info__item">
             <a href="mailto:info@devstudio.com" class="info__link">
-             <svg class="info__icon" width="26" height="12">
+             <svg class="icon-mail" width="14" height="10">
                <use href="./images/symbol-defs.svg#icon-envelope"></use>
              </svg>info@devstudio.com</a>
           </li>
-          <li class="info__item"><a href="tel:+380961111111" class="info__link"><svg class="info__icon" width="26" height="19">
+          <li class="info__item"><a href="tel:+380961111111" class="info__link"><svg class="icon-tel" width="10" height="14">
                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
              </svg>+38 096 111 11 11</a></li>
         </ul>
+        <div>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle__icon" width="24" height="16">
+            <use href="./images/symbol-defs.svg#burger-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      </div>
+      
+    </header>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero__container">
           <h1 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
           <button class="hero__btn" type="button" data-modal-open>Замовити послугу</button>
         </div>
-      </section> -->
+      </section>
       <section class="main section">
         <div class="container main__container">
           <ul class="main__list">
@@ -80,7 +88,7 @@
             </li>
           </ul>
           </section>
-          <!-- <section class="working section">
+          <section class="working section">
             <div class="container working__container">
             <h2 class="working__title">Чим ми займаємося</h2>
             <ul class="working__list">
@@ -104,16 +112,30 @@
               </li>
             </ul></div>
         </div>
-      </section> -->
-      <!-- <section class="section profile">
+      </section>
+      <section class="section profile">
         <div class="container profile__container">
           <h2 class="profile__title">Наша команда</h2>
           <ul class="profile__list">
             <li class="profile__item">
-              <img src="./images/img.jpg" alt="Product Designer" width="270" />
+              <picture>
+                 <source
+                media="(min-width: 1200px)"
+                srcset="./images/comand/img1lg@1x.jpg 1x, ./images/comand/img1lg@2x.jpg 2x"
+                type="image/jpg"/>
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/comand/img1md@1x.jpg 1x, ./images/comand/img1md@2x.jpg 2x"
+                type="image/jpg"/>
+                <source
+                media="(min-width: 480px)"
+                srcset="./images/comand/img1sm@1x.jpg 1x, ./images/comand/img1sm@2x.jpg 2x"
+                type="image/jpg"/>
+                <img src="./images/img.jpg" alt="Product Designer" width="100%" />
+              </picture>
               <h3 class="name">Ігор Дем'яненко</h3>
               <p class="speciality">Product Designer</p>
-              <ul class="social list">
+              <ul class="socials__list">
                 <li class="social-item">
                   <a class="social-link link" href="instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <svg class="social-icon" width="20" height="20">
@@ -145,10 +167,24 @@
               </ul>
             </li>
             <li class="profile__item">
-              <img src="./images/img1.jpg" alt="Frontend Developer" width="270" />
+              <picture>
+                 <source
+                media="(min-width: 1200px)"
+                srcset="./images/comand/img2lg@1x.jpg 1x, ./images/comand/img2lg@2x.jpg 2x"
+                type="image/jpg"/>
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/comand/img2md@1x.jpg 1x, ./images/comand/img2md@2x.jpg 2x"
+                type="image/jpg"/>
+                <source
+                media="(min-width: 480px)"
+                srcset="./images/comand/img2sm@1x.jpg 1x, ./images/comand/img2sm@2x.jpg 2x"
+                type="image/jpg"/>
+                <img src="./images/img1.jpg" alt="Frontend Developer" width="100%" />
+              </picture>
               <h3 class="name">Ольга Рєпіна</h3>
               <p class="speciality">Frontend Developer</p>
-               <ul class="social list">
+               <ul class="socials__list">
                 <li class="social-item">
                   <a class="social-link link" href="instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <svg class="social-icon" width="20" height="20">
@@ -180,10 +216,24 @@
               </ul>
             </li>
             <li class="profile__item">
-              <img src="./images/img2.jpg" alt="Marketing" width="270" />
+              <picture>
+                 <source
+                media="(min-width: 1200px)"
+                srcset="./images/comand/img3lg@1x.jpg 1x, ./images/comand/img3lg@2x.jpg 2x"
+                type="image/jpg"/>
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/comand/img3md@1x.jpg 1x, ./images/comand/img3md@2x.jpg 2x"
+                type="image/jpg"/>
+                <source
+                media="(min-width: 480px)"
+                srcset="./images/comand/img3sm@1x.jpg 1x, ./images/comand/img3sm@2x.jpg 2x"
+                type="image/jpg"/>
+                <img src="./images/img2.jpg" alt="Marketing" width="100%" />
+              </picture>
               <h3 class="name">Микола Тарасов</h3>
               <p class="speciality">Marketing</p>
-               <ul class="social list">
+               <ul class="socials__list">
                 <li class="social-item">
                   <a class="social-link link" href="instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <svg class="social-icon" width="20" height="20">
@@ -215,10 +265,24 @@
               </ul>
             </li>
             <li class="profile__item">
-              <img src="./images/img3.jpg" alt="UI Designer" width="270" />
+              <picture>
+                <source
+                media="(min-width: 1200px)"
+                srcset="./images/comand/img4lg@1x.jpg 1x, ./images/comand/img4lg@2x.jpg 2x"
+                type="image/jpg"/>
+                <source
+                media="(min-width: 768px)"
+                srcset="./images/comand/img4md@1x.jpg 1x, ./images/comand/img4md@2x.jpg 2x"
+                type="image/jpg"/>
+                <source
+                media="(min-width: 480px)"
+                srcset="./images/comand/img4sm@1x.jpg 1x, ./images/comand/img4sm@2x.jpg 2x"
+                type="image/jpg"/>
+                <img src="./images/img3.jpg" alt="UI Designer" width="100%" />
+              </picture>
               <h3 class="name">Михайло Єрмаков</h3>
               <p class="speciality">UI Designer</p>
-               <ul class="social list">
+               <ul class="socials__list">
                 <li class="social-item">
                   <a class="social-link link" href="instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <svg class="social-icon" width="20" height="20">
@@ -251,7 +315,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <section class="section customer">
         <div class="container customer__container">
           <h2 class="customer__title">Постійні клієнти</h2>
@@ -302,9 +366,9 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
-        <div>
+        <div class="footer__box">
           <a href="./index.html" class="footer__logo">Web<span class="footer__logo--foottxt">Studio</span></a>
       <address id="contacts" class="footer__address">
         м. Київ, пр-т Лесі Українки, 26
@@ -357,7 +421,7 @@
         </form>
       </div>
       </div>
-    </footer> --> -->
+    </footer>
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -391,7 +455,7 @@
           </div>
           <div  class="modal-form-group">
             <label class="modal-form-label" for="coment">Коментар</label>
-            <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Введіть текст" style="width: 448px; height: 120px;"></textarea>
+            <textarea name="coment" id="coment" cols="30" rows="10" placeholder="Введіть текст"></textarea>
           </div>
           <label class="modal-form-agreement">
             <input class="modal-form-checkbox" type="checkbox" />
@@ -407,8 +471,58 @@
         </form>
       </div>
     </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle__icon" width="24" height="24">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link current" href="">Студія</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="">Портфоліо</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="mobile-menu-link" href="">Контакти</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts list">
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link accent link" href="">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contacts-item">
+          <a class="mobile-contacts-link link" href="">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-socials list">
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link link">Instagram</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link link">Twitter</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link link">Facebook</a>
+        </li>
+        <li class="mobile-socials-item">
+          <a href="" class="mobile-socials-link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
 
     <script src="js/modal.js"></script>
     <script src="js/header.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

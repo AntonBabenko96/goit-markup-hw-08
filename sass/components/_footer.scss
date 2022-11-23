@@ -3,13 +3,12 @@
     padding-top: 60px;
     padding-bottom: 60px;
     width: 100%;
+    
+    
 }
 
-.footer__container {
-    display: flex;
-    align-items: baseline;
 
-}
+
 
 .footer__logo {
     color: var(--accent-color);
@@ -18,10 +17,37 @@
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-
     &--foottxt {
         color: #FFFFFF;
         font-family: 'Raleway';
         text-decoration: none;
     }
+}
+@media screen and (max-width: 767px) {
+    .footer {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer__box {
+      margin-left: 76px;
+      margin-right: 160px;
+    }
+    .footer__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer__box {
+        text-align: center;
+        width: 232px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .footer__container {
+        display: flex;
+        justify-content: baseline;
+        }
 }

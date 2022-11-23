@@ -1,6 +1,4 @@
-.social {
-    margin-left: 70px;
-}
+
 
 .social__txt {
     font-weight: 700;
@@ -37,4 +35,21 @@
     display: flex;
     justify-content: center;
     gap: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .social__list {
+        margin-bottom: 60px;
+    }
+}
+@media screen and (max-width:1199px) {
+    .social__txt {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .social {
+            margin-left: 70px;
+        }
 }
